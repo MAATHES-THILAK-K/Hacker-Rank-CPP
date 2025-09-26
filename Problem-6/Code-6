@@ -1,0 +1,23 @@
+#include<iostream>
+using namespace std;
+
+int main(){
+    int num[2];
+    string name[]={"zero","one","two","three","four","five","six","seven","eight","nine"};
+    cin>>num[0];
+    cin>>num[1];
+    for (int i=num[0];i<num[1]+1;i++){
+        if (i<10){
+              cout<<name[i]<<endl;
+        }
+        else{
+            if (i%2==0){
+                cout<<"even"<<endl;
+            }
+            else{
+                cout<<"odd"<<endl;
+            }
+        }
+        }
+            return 0;
+    } 
