@@ -1,0 +1,14 @@
+#include<iostream>
+using namespace std;
+int main(){
+    int inp;
+    cin>>inp;
+    string word[]={"zero","one","two","three","four","five","six","seven","eight","nine"};
+    if (inp>0 && inp<10){
+        cout<<word[inp];
+    }
+    else{
+        cout<<"Greater than 9";
+    }
+    return 0;
+}
