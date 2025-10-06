@@ -1,0 +1,22 @@
+//this code works perfectly in the private test case but subjected to the segfault in Public test case :(
+#include<iostream>
+using namespace std;
+int main(){
+    int n[100][100],q,k[100]={0},ans[100],t;
+    cin>>t>>q;
+    for (int i=0;i<t;i++){
+        cin>>k[i];
+        for(int j=0;j<k[i];j++){
+             cin>>n[i][j];
+        }
+    }
+    int t1,t2;
+    for(int i=0;i<q;i++){
+        cin>>t1>>t2;
+        ans[i]=n[t1][t2];
+    }
+    for(int i=0;i<q;i++){
+        cout<<ans[i]<<endl;
+    }
+    return 0;
+}
